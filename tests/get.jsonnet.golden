@@ -1,0 +1,9 @@
+{
+   "get": {
+      "get": "git",
+      "passed": [
+         "prepare"
+      ],
+      "trigger": true
+   }
+}

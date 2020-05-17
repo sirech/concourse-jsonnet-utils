@@ -19,4 +19,19 @@
     ),
   },
 
+  Get(name, trigger = true, dependencies = []):: {
+    get: name,
+    trigger: trigger,
+    passed: dependencies
+  },
+
+  Parallel(tasks):: {
+    in_parallel: tasks
+  },
+
+  Job(name, serial = true, plan = []):: {
+    name: name,
+    serial: serial,
+    plan: plan
+  },
 }
