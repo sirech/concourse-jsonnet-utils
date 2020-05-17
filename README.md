@@ -1,5 +1,7 @@
 # concourse-jsonnet-utils
 
+[![CircleCI](https://circleci.com/gh/sirech/concourse-jsonnet-utils.svg?style=svg)](https://circleci.com/gh/sirech/concourse-jsonnet-utils)
+
 This is a collection of utility blocks to represent [Concourse](https://concourse-ci.org/) resources in [Jsonnet](https://jsonnet.org/).
 
 ## What's the point?
