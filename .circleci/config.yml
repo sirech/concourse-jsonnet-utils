@@ -2,8 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: bitnami/jsonnet
+      - image: circleci/python
 
     steps:
       - checkout
+      - run: pip3 install jsonnet
       - run: ./go test
