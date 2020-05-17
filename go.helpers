@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+
+prepare_tmp_folder() {
+  mkdir -p ./tmp
+  # shellcheck disable=SC2064
+  trap "rm -Rf \"./tmp\" " EXIT
+}
