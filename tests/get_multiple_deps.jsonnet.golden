@@ -1,0 +1,10 @@
+{
+   "get": {
+      "get": "git",
+      "passed": [
+         "linter",
+         "test"
+      ],
+      "trigger": true
+   }
+}

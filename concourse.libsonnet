@@ -22,7 +22,7 @@
   Get(name, trigger = true, dependencies = []):: std.prune({
     get: name,
     trigger: trigger,
-    passed: dependencies
+    passed: if std.isArray(dependencies) then dependencies else [dependencies]
   }),
 
   Parallel(tasks):: {
