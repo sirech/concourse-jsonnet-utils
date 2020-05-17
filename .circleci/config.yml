@@ -2,9 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python
+      - image: sirech/docker-jsonnet
 
     steps:
       - checkout
-      - run: pip3 install jsonnet
       - run: ./go test
