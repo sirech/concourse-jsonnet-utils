@@ -3,12 +3,10 @@
       "in_parallel": [
          {
             "get": "git",
-            "passed": [ ],
             "trigger": true
          },
          {
             "get": "dev-container",
-            "passed": [ ],
             "trigger": true
          }
       ]

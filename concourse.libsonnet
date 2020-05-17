@@ -19,19 +19,19 @@
     ),
   },
 
-  Get(name, trigger = true, dependencies = []):: {
+  Get(name, trigger = true, dependencies = []):: std.prune({
     get: name,
     trigger: trigger,
     passed: dependencies
-  },
+  }),
 
   Parallel(tasks):: {
     in_parallel: tasks
   },
 
-  Job(name, serial = true, plan = []):: {
+  Job(name, serial = true, plan = []):: std.prune({
     name: name,
     serial: serial,
     plan: plan
-  },
+  }),
 }

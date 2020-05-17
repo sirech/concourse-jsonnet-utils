@@ -1,7 +1,6 @@
 [
    {
       "name": "prepare",
-      "plan": [ ],
       "serial": true
    }
 ]

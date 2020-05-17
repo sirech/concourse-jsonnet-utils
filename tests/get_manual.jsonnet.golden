@@ -1,7 +1,6 @@
 {
    "get": {
       "get": "git",
-      "passed": [ ],
       "trigger": false
    }
 }
