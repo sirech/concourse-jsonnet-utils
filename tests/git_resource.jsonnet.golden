@@ -1,0 +1,10 @@
+{
+   "git": {
+      "name": "git",
+      "source": {
+         "branch": "master",
+         "uri": "https://github.com/sirech/example-concourse-pipeline.git"
+      },
+      "type": "git"
+   }
+}
