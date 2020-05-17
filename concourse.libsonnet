@@ -34,4 +34,16 @@
     serial: serial,
     plan: plan
   }),
+
+  FileTask(path, platform = 'linux', inputs = [], caches = [], dir = null)::
+    local formattedInputs = if std.isArray(inputs) then inputs else [inputs];
+  std.prune({
+    platform: platform,
+    inputs: formattedInputs,
+    caches: if std.isArray(caches) then caches else [caches],
+    run: {
+      path: path,
+      dir: if std.length(formattedInputs) > 0 then formattedInputs[0] else null
+    }
+  }),
 }

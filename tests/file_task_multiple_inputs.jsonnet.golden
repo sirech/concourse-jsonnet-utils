@@ -1,0 +1,11 @@
+{
+   "inputs": [
+      "git",
+      "dev-tools"
+   ],
+   "platform": "linux",
+   "run": {
+      "dir": "git",
+      "path": "pipeline/tasks/build/task.sh"
+   }
+}
