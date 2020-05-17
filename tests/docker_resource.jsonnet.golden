@@ -1,0 +1,10 @@
+{
+   "docker": {
+      "name": "serverspec-container",
+      "source": {
+         "repository": "sirech/dind-ruby",
+         "tag": "2.6.3"
+      },
+      "type": "docker-image"
+   }
+}

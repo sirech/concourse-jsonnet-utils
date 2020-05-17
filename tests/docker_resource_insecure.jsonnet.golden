@@ -1,0 +1,13 @@
+{
+   "docker": {
+      "name": "dev-container",
+      "source": {
+         "insecure_registries": [
+            "registry:5000"
+         ],
+         "repository": "registry:5000/dev-container",
+         "tag": "latest"
+      },
+      "type": "docker-image"
+   }
+}
