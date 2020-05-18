@@ -1,7 +1,19 @@
 {
+   "caches": [
+      {
+         "path": "git"
+      },
+      {
+         "path": "dev-tools"
+      }
+   ],
    "inputs": [
-      "git",
-      "dev-tools"
+      {
+         "name": "git"
+      },
+      {
+         "name": "dev-tools"
+      }
    ],
    "platform": "linux",
    "run": {

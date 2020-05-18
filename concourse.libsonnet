@@ -41,14 +41,14 @@
   }),
 
   FileTask(path, platform = 'linux', inputs = [], caches = [], dir = null)::
-    local formattedInputs = if std.isArray(inputs) then inputs else [inputs];
+    local toA(l) = if std.isArray(l) then inputs else [l];
   std.prune({
     platform: platform,
-    inputs: formattedInputs,
-    caches: if std.isArray(caches) then caches else [caches],
+    inputs: [{ name: input } for input in toA(inputs)],
+    caches: [{ path: cache } for cache in toA(caches)],
     run: {
       path: path,
-      dir: if std.length(formattedInputs) > 0 then formattedInputs[0] else null
+      dir: if std.length(toA(inputs)) > 0 then toA(inputs)[0] else null
     }
   }),
 }
