@@ -25,6 +25,11 @@
     passed: if std.isArray(dependencies) then dependencies else [dependencies]
   }),
 
+  Group(name, jobs):: {
+    name: name,
+    jobs: jobs
+  },
+
   Parallel(tasks):: {
     in_parallel: tasks
   },
