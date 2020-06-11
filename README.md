@@ -6,7 +6,7 @@ This is a collection of utility blocks to represent [Concourse](https://concours
 
 ## What's the point?
 
-TODO: link to blog post
+See an explanation in [this post](https://hceris.com/templating-concourse-pipelines-with-jsonnet/)
 
 ## How to use it?
 
